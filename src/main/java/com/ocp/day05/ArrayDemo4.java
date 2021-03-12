@@ -33,5 +33,19 @@ public class ArrayDemo4 {
         IntSummaryStatistics is = IntStream.of(source1).summaryStatistics();
         System.out.println(is);
         System.out.println(is.getAverage());
+        System.out.println("------");
+        for (int i=0; i < source1.length; i++) {
+            for (int j = i; j < source1.length; j++) {
+                if (source1[i] < source1[j]) {
+                    int temp = 0;
+                    temp = source1[j];
+                    source1[j] = source1[i];
+                    source1[i] = temp;
+                }
+            }
+        }
+        for(int i:source1){
+            System.out.printf("%s ",i);
+        }
     }
 }
