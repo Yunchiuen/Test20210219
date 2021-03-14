@@ -15,7 +15,7 @@ public class EmployeeDemo2 {
             System.out.println(s);
         }
         //java 8
-        Stream.of(e).forEach(s -> System.err.println(s));
+        Stream.of(e).forEach(s -> System.out.println(s));
         Stream.of(e).forEach(System.out::println);
     }
 }
