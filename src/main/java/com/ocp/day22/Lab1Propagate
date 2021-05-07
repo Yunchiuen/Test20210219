@@ -1,0 +1,30 @@
+Exception Lab 1 - Propagating and Catching an Exception 
+So far you have only seen exceptions displayed in this chapter with pseudocode.
+In this exercise we attempt to create two methods that deal with exceptions. 
+One of the methods is the main() method, which will call another method. 
+If an exception is thrown in the other method, it must deal with it. 
+A finally statement will be included to indicate it is all done. 
+The method it will call will be named reverse(), and it wil1 reverse the order of the characters in the string. 
+If the string contains no characters, it will propagate an exception up to the main() method. 
+在本練習中，我們嘗試創建兩種處理異常的方法。
+其中一個方法是main（）方法，它將調用另一個方法。
+如果在其他方法中引發了異常，則必須對其進行處理。
+將包含finally語句以指示已完成。
+它將調用的方法將命名為reverse（），它將對字符串中字符的順序進行反轉。
+如果字符串不包含任何字符，它將傳播一個異常直至main（）方法。
+
+1. Create an enclosing class called Propagate and a main() method, which will remain empty for now. 
+1. 創建一個稱為Propagate的class和一個main（）方法，該類暫時保持空白。
+2. Create a method called reverse(). It takes an argument of a string and returns a String. 
+2. 創建一個名為reverse（）的方法。 它接受一個字串參數，並返回一個字串。
+3. Check if the String has a length of 0 by using the length() method. If the length is e, it will throw a new exception. 
+3. 使用length（）方法檢查String的長度是否為0。 如果長度為e，則將引發新的異常。
+4. Now let's include the code to reverse the order of the String. Because this isn't the main topic of this chapter, the reversal code has been provided, but feel free to try it on your own. 
+現在，讓我們包括反轉字符串順序的代碼。 因為這不是本章的主題，所以提供了反轉代碼，但是可以自己嘗試。
+        String reverseStr = "";
+        for (int i=s.length()-1;i>=0; --i){
+        reverseStr += s.charAt(i);
+        }
+        return reverseStr;
+5. Now in the main() method we will attempt to call this method and deal with any potential exceptions. Additionally, we will include a finally statement that tells us it has finished.
+現在在main（）方法中，我們將嘗試調用此方法並處理任何潛在的異常。 此外，我們將包含一個finally語句，告訴我們它已完成。

@@ -1,0 +1,31 @@
+Exception Lab 2 - Creating an Exception 
+In this exercise we attempt to create a custom exception. 
+We won't put in any new methods (it will have only those inherited from Exception), 
+and because it extends Exception, the compiler considers it a checked exception. 
+The goal of the program is to check to see if a command-line argument, representing a particular food (as a string), is considered bad or OK. 
+在本練習中，我們嘗試創建一個自定義異常。
+我們將不會放入任何新方法（它將僅包含那些從Exception繼承的方法），
+並且由於它繼承了Exception，因此編譯器將其視為已檢查的異常。
+該程序的目標是檢查代表特定食物（作為字串）的命令行參數是否被認為是錯誤的或確定的。
+1. Let's first create our exception. We will call it BadFoodException. This exception will be thrown when a bad food is encountered. 
+1. 讓我們首先創建我們的異常。 我們將其稱為BadFoodException。 遇到不良食物時將拋出此異常。
+2. Create an enclosing class called MyException and a main() method, which will remain empty for now. 
+2. 創建一個名為MyException的class和一個main（）方法，該類暫時保持空白。
+3. Create a method called checkFood (). 
+   It takes a String argument and throws our exception if it doesn't like the food it was given. 
+   Otherwise, it tells us it likes the food.You can add any foods you aren't particularly fond of to the list. 
+3. 創建一個名為checkFood（）的方法。
+   傳入一個String參數，如果不喜歡它給出的食物，則拋出我們的異常。
+   否則，它告訴我們它喜歡食物。可以添加到列表中。
+4. Now in the main() method, you'll get the command-line argument out of the String array, and then pass that String on to the checkFood () method. 
+   Because it's a checked exception, the checkFood() method must declare it, and the main(() method must handle it (using a try/catch). 
+   Do not have main() declare the method, because if main() ducks the exception, who else is back there to catch it? 
+   As useful as exception handling is, it's stil1 up to the developer to make proper use of it. 
+   Exception handling makes organizing our code and signaling problems easy, but the exception handlers still have to be written. 
+   You'11 find that even the most complex situations can be handled, and keep your code reusable, readable, and maintainable.
+4. 現在在main（）方法中，您將從String數組中獲取命令行參數，然後將該String傳遞給checkFood（）方法。
+   因為這是一個檢查異常，所以checkFood（）方法必須聲明它，而main（（）方法必須處理它（使用try / catch）。
+   沒有main（）聲明該方法，因為如果main（）避開了異常，還有誰在那兒捕捉它？
+   與異常處理一樣有用，它取決於開發人員是否正確使用它。
+   異常處理使組織代碼和發出信號的問題變得容易，但是仍然必須編寫異常處理程序。
+    您會發現11甚至可以處理最複雜的情況，並使您的代碼可重用，可讀和可維護。
